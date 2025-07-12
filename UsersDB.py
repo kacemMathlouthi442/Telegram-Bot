@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 def get_connection():
-    return psycopg.connect(os.environ.get("DB_URL"))
+    return psycopg.connect("postgresql://postgres.jyfdmxykkfszwowpdnvr:Users1234.4321@aws-0-eu-central-1.pooler.supabase.com:6543/postgres")
 
 #CREATE THE TABLE
 def create_users_table():

@@ -25,7 +25,7 @@ filterwarnings(action="ignore", message=r".*CallbackQueryHandler", category=PTBU
 logging.basicConfig(level=logging.INFO)
 load_dotenv()
 
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
+BOT_TOKEN = "7877567060:AAEOD-Vw95CEj9hQ_ANQbslH2kg9d5QnIwU"
 
 # States for conversation handlers
 STEP1, STEP2, STEP3 = range(3)

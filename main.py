@@ -1,25 +1,3 @@
-import asyncio
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
-from telegram.ext import (
-    CommandHandler,
-    CallbackQueryHandler,
-    ContextTypes,
-    MessageHandler,
-    filters,
-    ConversationHandler,
-    ApplicationBuilder
-)
-from time import sleep
-from UsersDB import *
-from KeysDB import *
-from Others import *
-from Functions import *
-from random import randint
-import ast
-from warnings import filterwarnings
-from telegram.warnings import PTBUserWarning
-import os, logging
-from dotenv import load_dotenv
 
 filterwarnings(action="ignore", message=r".*CallbackQueryHandler", category=PTBUserWarning)
 logging.basicConfig(level=logging.INFO)
